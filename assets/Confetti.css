@@ -1,0 +1,54 @@
+
+#main-container {
+	width: 768px;
+	height: 1024px;
+	position: absolute;
+}
+.container {
+	width: 768px;
+	height: 1024px;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+#outro-container {
+	background-image: url('bg.jpg');
+	background-size: 768px 1024px;
+}
+#animation-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    overflow: hidden;
+}
+
+@-webkit-keyframes confettifallleft {
+	0% {-webkit-transform: translate(0px,0px);}
+	50% {-webkit-transform: translate(50px,512px);}
+	100% {-webkit-transform: translate(0px,1024px);}
+}
+@-webkit-keyframes confettifallright {
+	0% {-webkit-transform: translate(0px,0px);}
+	50% {-webkit-transform: translate(-50px,512px);}
+	100% {-webkit-transform: translate(0px,1024px);}
+}
+.confetti.fallsright {
+	animation: confettifallleft 15s linear infinite;
+}
+.confetti.fallsleft {
+	animation: confettifallleft 15s linear infinite;
+}
+.confetti {
+	background-image: url("confetti.png");
+	display: block;
+    width: 20px;
+    height: 19px;
+}
+#character {
+	background-image: url("girlCharacter.png");
+	width:162px;
+	height: 540px; 
+	position:absolute;
+	top: 484px;
+	left: 0;
+}
